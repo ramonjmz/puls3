@@ -13,6 +13,11 @@ body
 /*
 comentario de lo que sea
 */
+footer{
+
+
+	
+}
 header
 {
 	background: #434343;
@@ -127,6 +132,9 @@ nav #publicar_nav a:after{
 {
 	margin: 1em;
 }
+#bienvenida{
+	display: none;
+}
 #contenido .item
 {
 	background: white;
@@ -152,6 +160,17 @@ color: white;
 margin: 0 0 0 2em; 
 padding: 4px;
 text-decoration: none;
+}
+#contenido .item .datos_item .guardar_item
+{
+	margin: 0 1em;
+	text-decoration: none;
+}
+#contenido .item .datos_item .guardar_item:after
+{
+	color: #FD5;
+	content: "\e003";
+	font-family: "icomoon";
 }
 #contenido .item .datos_item .tag_item
 {
@@ -208,6 +227,16 @@ text-decoration: none;
 	content: "\e002";
 	font-family: "icomoon";
 	vertical-align: bottom;
+}
+
+#contenido .item .votacion .up:after
+{
+	content: "\e000";
+}
+
+#contenido .item .votacion .up:after
+{
+	content: "\e001";
 }
 
 
