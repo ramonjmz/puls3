@@ -42,8 +42,17 @@ header #avatar figcaption
 	background: #22BCE0;
 	float: right;
 	height: 50px;
-	padding: 0 2px;
+	line-height: 50px;
+	/*padding: 0 2px;*/
 }
+
+header #avatar figcaption:after{
+	content: "\e001";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.5;
+}
+
 header #avatar img
 {
 	float: left;
@@ -78,15 +87,28 @@ nav ul li a
 }
 nav #flechita_nav a
 {
-	background: #22BCE0;
 	padding: 0.5em;
 	text-decoration: none;
 }
+
 nav #publicar_nav
 {
 	/*i is zorri*/
+		background: #22BCE0;
+
 	float: right;
 	margin-right: 0; 
+	padding-right: 0.8em;
+	position: relative;
+}
+nav #publicar_nav:after{
+	color: rgb(255,255,255,0,5);
+		content: "\e003";
+	font-family: "icomoon";
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0.6;
 }
 nav #publicar_nav a
 {
@@ -94,6 +116,13 @@ nav #publicar_nav a
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
+
+nav #publicar_nav a:after{
+	content: "";
+	font-family: "icomoon";
+	opacity: 0.6;
+}
+
 #contenido
 {
 	margin: 1em;
@@ -111,11 +140,25 @@ nav #publicar_nav a
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
+
+#contenido .item .datos_item {
+	text-align: right;
+}
+
+#contenido .item .datos_item .comentarios_item {
+background: #878787;
+border-radius: 4px;
+color: white;
+margin: 0 0 0 2em; 
+padding: 4px;
+text-decoration: none;
+}
 #contenido .item .datos_item .tag_item
 {
 	background: #22BCE0;
 	border-radius: 0.5em;
 	color: white;
+	float: left;
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
@@ -150,10 +193,22 @@ nav #publicar_nav a
 	top: 100%;
 	width: 96px;
 }
+#
 
+#contenido .item .votacion a
+{
 
+	text-decoration: none;
+}
 
-
+#contenido .item .votacion .down:after,
+#contenido .item .votacion .up:after
+{
+	font-size: 1.5em;
+	content: "\e002";
+	font-family: "icomoon";
+	vertical-align: bottom;
+}
 
 
 
